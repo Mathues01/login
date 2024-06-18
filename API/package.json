@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "cadastro",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "devDependencies": {
+    "prisma": "^5.15.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
