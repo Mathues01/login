@@ -22,24 +22,35 @@ function Home() {
 
   async function createUsers() {
     await api.post('/usuarios', {
-       nome: inputName.current.value,
+      nome: inputName.current.value,
       sobrenome: inputSurname.current.value,
       email: inputEmail.current.value,
       idade: inputAge.current.value,
       endereço: inputAddress.current.value
+      
 
     })
+
+    {
+      const nome = inputName.current.value
+      const sobre = inputSurname.current.value
+      alert('usuario criado com sucesso');
+      alert(`Bem vindo!! ${nome} ${sobre}`);
+      await window.location.href('navegacao')
+    }
     getUsers()
- 
-   
+
+
 
   } 
-  
-  async function deleteUsers(id) {
-     await api.delete(`/usuarios/${id}`)
 
-     getUsers()
+  async function deleteUsers(id) {
+    await api.delete(`/usuarios/${id}`)
+    {
+      alert("USUARIO FOI DE VASCO")
     }
+    getUsers()
+  }
 
   useEffect(() => {
     getUsers()
@@ -81,7 +92,7 @@ function Home() {
 
 
 
-function Analisardados() {
+function AnalisarDados() {
 
 }
 

@@ -44,7 +44,7 @@ app.put('/usuarios/:id', async (req, res) => {
           data: {
                email: req.body.email,
                name: req.body.nome,
-               surname: req.body.sobrenome,
+               surname: req.body.sobrenome,       
                age: req.body.idade,
                address: req.body.endereço
           }

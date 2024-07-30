@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
+  height: 100vh;
+  /*Altura*/
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa-pai {
+  background-color: black;
+  opacity: 0.8;
+  height: 90%;
+  width: 40%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid;
+  border-radius: 50px;
+  animation: borderAnimation 1s infinite alternate;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: rgb(255, 255, 255);
+    /* Vermelho */
+  }
+
+  25% {
+    border-color: rgb(141, 141, 141);
+  }
+
+  50% {
+    border-color: rgb(100, 100, 100);
+    /* Verde */
+  }
+
+  75% {
+    border-color: rgb(20, 20, 20);
+  }
+
+  100% {
+    border-color: rgb(0, 0, 0);
+    /* Azul */
+  }
+}
+
+input {
+  font-size: 20px;
+  border: 3px solid;
+  border-radius: 50px;
+  outline: none;
+  padding: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(255, 0, 0);
+  opacity: 0.8;
+  animation: borderAnimation2 1s infinite alternate;
+
+}
+
+@keyframes borderAnimation2 {
+  0% {
+    border-color: rgb(255, 255, 255)
+  }
+
+  25% {
+    border-color: rgb(4, 255, 38);
+  }
+
+  50% {
+    border-color: rgb(0, 47, 255);
+  }
+
+  75% {
+    border-color: rgb(255, 0, 234);
+  }
+
+  100% {
+    border-color: rgb(255, 0, 0);
+  }
+}
+
+.caixa-pai2 {
+  background-color: black;
+  opacity: 0.8;
+  height: 50%;
+  width: 25%;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid;
+  border-radius: 50px; 
+  animation: borderAnimation 1s infinite alternate;
+}
+
+button {
+  border-radius: 50px;
+  background-color: rgb(75, 75, 75);
+  color: turquoise; 
+  padding: 5px;
+  margin: 5px;
+  
+}
+
+label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 20px;
+}
